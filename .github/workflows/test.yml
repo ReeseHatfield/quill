@@ -1,4 +1,4 @@
-name: Test Local Action
+name: Test Quill as action
 
 on:
   push:
@@ -16,5 +16,5 @@ jobs:
       - name: Setup Typst
         uses: typst-community/setup-typst@v5
 
-      - name: Run Quill as a local action
+      - name: Run Quill Script
         uses: ./
