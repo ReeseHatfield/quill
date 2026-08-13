@@ -1,5 +1,24 @@
 # quill
-A batteries-included typst validation workflow
+
+
+
+<p align="center">
+  <a href="https://github.com/reesehatfield/quill">
+    <img src="./img/quill.png" alt="Quill Logo" width="400" height="370">
+  </a>
+</p>
+
+<h3 align="center"><strong>Quill</strong></h3>
+
+<p align="center">
+    A batteries-included typst validation workflow
+    <br>
+</p>
+
+- Ensures all typst in a repository compiles
+- Optional ignore directive: `// quill: ignore`
+- Drop into any project with typst files
+- Not intended for release PDFs, just a code validator
 
 ## Usage
 
@@ -25,4 +44,9 @@ jobs:
 
       - name: Validate Typst files from Quill
         uses: ReeseHatfield/quill@v1
+```
+
+You can set a file to be ignored by Quill by add the following to the first line of the `.typ` file
+```bash
+// quill: ignore
 ```
