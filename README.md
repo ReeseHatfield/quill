@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/reesehatfield/quill">
-    <img src="./img/quill.png" alt="Quill Logo" width="400" height="370">
+    <img src="./img/quill.png" alt="Quill Logo" width="220" height="330">
   </a>
 </p>
 
