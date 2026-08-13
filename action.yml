@@ -1,0 +1,14 @@
+name: 'Quill Typst Validator'
+description: 'Validates Typst files'
+branding:
+  icon: 'check-square'
+  color: 'blue'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Run Quill Validator
+      shell: bash
+      run: |
+        chmod +x "${{ github.action_path }}/quill.sh"
+        "${{ github.action_path }}/quill.sh"
