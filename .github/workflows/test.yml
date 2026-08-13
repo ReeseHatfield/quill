@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Typst
-        uses: typst/setup-action@v2
+        uses: typst-community/setup-typst@v5
 
       - name: Run Quill as a local action
         uses: ./
