@@ -15,7 +15,7 @@ for filepath in **/*.typ; do
 
 
     # query for random label, but dont spend time actually compiling document
-    typst eval 'query(<dummy-label>)' --in "$filepath" > /dev/null
+    typst eval --root . 'query(<dummy-label>)' --in "$filepath" > /dev/null
 
     if [ $? -eq 1 ]; then
         echo "Error: could not compile $filepath"
